@@ -1,4 +1,9 @@
 #!/bin/bash 
+# Week 2 Script - Copies a folder if it identifies a director/folder exists.
+# If it does it copies all files recursively into a new folder
+# Author: Mervyn Ng
+# Date: 06 Feb 2022
+# Modified: 20 Aug 2022 - Merged changes to new repository and copied over
       
 read -p "type the name of the folder you would like to copy: " folderName
       

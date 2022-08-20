@@ -28,7 +28,8 @@ if [[ "$passHashVar" == "$currentPassword" ]]; then
         
         # Deletes the passHash in clean-up
         rm passHash.txt
-        exit 0
+    exit 0
+        
     else
         echo "Access Denied"
         
