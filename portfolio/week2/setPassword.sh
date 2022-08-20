@@ -7,7 +7,7 @@
 
 # Creates a variable $foldername with User input
 # Read Prompt with -p and assigns it to variable folderName
-read -p "Please Enter a Folder Name> " folderName
+read -p "Please Enter a Folder Name > " folderName
      
 mkdir "$folderName" 
 
