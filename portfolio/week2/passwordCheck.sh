@@ -35,7 +35,7 @@ if [[ "$passHashVar" == "$currentPassword" ]]; then
         
         # Deletes the passHash in clean-up
         rm passHash.txt
-exit 1
+    exit 1
 fi
 
 
