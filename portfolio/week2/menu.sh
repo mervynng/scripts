@@ -40,27 +40,8 @@ if test $userOption -eq 1; then
     fi
     exit 0
 
-
-# Conditional check to 
-#    if (( "userOption"="1" )); then
-#    ./foldermaker.sh
-#    elif (( "userOption"="2" )); then
-#    ./foldercopier.sh
-#    elif (( "userOption"="3" )); then
-#    ./setPassword.sh
-#    else
-#    echo "Please pick a number from 1 - 3"    
-#    fi
-#    exit 0
-
 else
     
-
-
-
-
-
-
 exit 1
 fi
 
