@@ -22,6 +22,7 @@ read -p "Please enter an option > " userOption
 # Var Check and informs user of their option
 echo You have entered "$userOption"
 
+# Uses the test and else if conditional function
 
 if test $userOption -eq 1; then
     ./foldermaker.sh
@@ -30,6 +31,11 @@ if test $userOption -eq 1; then
     elif test $userOption -eq 3; then
     ./setPassword.sh
     else
+    
+    # If a number is entered which is not from [1-3] it exits and no commands are run. A reminder is given to the user to enter a command from 1-3
+    # Script can be improved either with an exit function, or loop-back to capture correct input, without running the password check again.
+    # Future work
+
     echo "Please pick a number from 1 - 3"    
     fi
     exit 0
