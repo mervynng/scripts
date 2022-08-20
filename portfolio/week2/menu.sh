@@ -10,7 +10,7 @@
 
 ./passwordCheck.sh
 
-if [[ "$?"=="0" ]]; then
+if [[ "$?" == "0" ]]; then
     
 echo Select an Option:
 echo 1. Create a folder
