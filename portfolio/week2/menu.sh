@@ -6,6 +6,7 @@
 #
 # Author: Mervyn Ng
 # 20 Aug 2022 - 1st version
+# 20 Aug 2022 - Completed Debug and Script working
 
 ./passwordCheck.sh
 
@@ -18,18 +19,33 @@ echo 3. Set a password
 
 read -p "Please enter an option > " userOption
 
-# Var Check
-echo you have entered "$userOption"
-    if [[ "$userOption"=="1" ]]; then
+# Var Check and informs user of their option
+echo You have entered "$userOption"
+
+
+if test $userOption -eq 1; then
     ./foldermaker.sh
-    elif [[ "userOption"=="2" ]]; then
+    elif test $userOption -eq 2; then
     ./foldercopier.sh
-    elif [[ "userOption"=="3" ]]; then
+    elif test $userOption -eq 3; then
     ./setPassword.sh
     else
     echo "Please pick a number from 1 - 3"    
     fi
     exit 0
+
+
+# Conditional check to 
+#    if (( "userOption"="1" )); then
+#    ./foldermaker.sh
+#    elif (( "userOption"="2" )); then
+#    ./foldercopier.sh
+#    elif (( "userOption"="3" )); then
+#    ./setPassword.sh
+#    else
+#    echo "Please pick a number from 1 - 3"    
+#    fi
+#    exit 0
 
 else
     
@@ -42,3 +58,9 @@ else
 exit 1
 fi
 
+# References
+#
+## References
+# MCKNIGHT, R. (2022 Aug) ECU Canvas - Write Case statements to "control program flow. https://courses.ecu.edu.au/courses/13892/pages/2-dot-5-write-case-statements-to-control-program-flow?module_item_id=955305
+# DHIR, S. (2022 Aug) Email to Mervyn Ng, dated 20 Aug 2022. "Re: Just working on old scripts - week2"
+# www.Linuxhint.com (2022). Bash conditional statements https://linuxhint.com/bash_conditional_statement/
