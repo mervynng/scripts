@@ -24,5 +24,6 @@ do
     mkdir "week $i" 
       
 done 
-     
+    
+exit 0
 					

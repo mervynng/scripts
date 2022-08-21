@@ -18,7 +18,7 @@ read -p "Enter the folder to save the download into " downFolder
 # Use wget to retrive the URL
 # Output wget information to a TXT File
 
-while [ $running != n ]; 
+while [ $running != exit  ]; 
     do
         echo wget $url -o '/'$downFolder/$downFile
 
@@ -29,13 +29,13 @@ while [ $running != n ];
 
         read -p "Do you want to Download another Internet resource. Type \"exit\" to close this program " running
 
-        #expected break point
-
+        #Expected break point
         
             if [ $running == exit ];
                 then
+                    echo "Goodbye"
                     break
-                            fi
+            fi
 
         read -p "Type the name of the website or file you would like to download " url
         read -p "Enter the Log filename to save the download into " downFile
