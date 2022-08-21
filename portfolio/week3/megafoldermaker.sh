@@ -1,6 +1,6 @@
 
-#!/bin/bash 
-    
+       #!/bin/bash 
+      
 #If there aren't two arguments to the script 
       
 if (( $#!=2 )); then 
@@ -21,8 +21,9 @@ do
       
     echo "Creating directory number $i" 
       
-    mkdir "week $i" 
+    mkdir "week$i" 
       
 done 
-     
+    
+exit 0
 					
