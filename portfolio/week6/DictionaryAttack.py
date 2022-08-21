@@ -3,7 +3,10 @@
 # Author: Mervyn Ng
 # Date: 22 Aug 22
 # Merge python and opensource files to incorporate BruteForce
-
+# To use this code you must enter the password at line 31 for variable $password
+# This then uses and Md5 to encode, or a hash of your choice to generate the hash
+# Following this it will iterate and try to brute force it using the current encoding ascii - UTF-8
+ 
 encoding = "ascii" # utf-8 for unicode support
 
 from hashlib import md5
@@ -11,15 +14,7 @@ from time import time
 from string import printable
 from itertools import product, count
 
-
-#hidden password hash
-passwordHash = "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824"
-
-from hashlib import md5
-from time import time
-from string import printable
-from itertools import product, count
-
+# Defines the encoded password
 
 def passwords(encoding):
     chars = [c.encode(encoding) for c in printable]
@@ -27,18 +22,24 @@ def passwords(encoding):
         for pwd in product(chars, repeat=length):
             yield b''.join(pwd)
 
+# The compares the hashes genrated by the password
 
 def crack(search_hash, encoding):
     for pwd in passwords(encoding):
         if md5(pwd).digest() == search_hash:
-            return pwd.decode(encoding)
 
+            # On successful match return value
+            return pwd.decode(encoding)
 
 if __name__ == "__main__":
     encoding = 'ascii'  # utf-8 for unicode support
-    password = 'pwww'
+    # Insert Password to be cracked here
+    password = 'ExamplePassword'
+
+    # Specify the hash type here SHA1 SHA256 etc
     password_hash = md5(password.encode(encoding)).digest()
 
+    # Generates the statistics including time, cracked password and the time of completion.
     start = time()
     cracked = crack(password_hash, encoding)
     end = time()
@@ -63,3 +64,4 @@ if __name__ == "__main__":
 # References:
 # R.MCKNIGHT (2022). Write scripts in other languages for other platforms. https://courses.ecu.edu.au/groups/15209/discussion_topics/142133?module_item_id=955340
 # Username:hjpotter92. Brute-force Hash Cracker. https://codereview.stackexchange.com/questions/187830/brute-force-hash-cracker
+# W.STANDLEY (2022). Write scripts in other languages for other platforms. https://courses.ecu.edu.au/groups/15209/discussion_topics/142133?module_item_id=955340
