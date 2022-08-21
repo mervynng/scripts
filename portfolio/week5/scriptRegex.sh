@@ -12,6 +12,16 @@ grep -r "^m"
 
 grep -r '[0-9]\{3\}'
 
+# Any lines with at least 3 digit numbers & Starting with 3 Digits
+grep -r -E '[^0-9]'[0-9]{3}'
+
+
+grep -r -E '[0-9]+([^0-9]+[0-9]+){4}
+
+# a number with at least one digit, preceded by at least one non-digit character. 
+# We then repeat this 4 times to get 5 numbers separated by non-digits.
+[^0-9]+[0-9]+ 
+
 # all echo statements with at least three words
 
 grep -r 'echo' -r #word regex

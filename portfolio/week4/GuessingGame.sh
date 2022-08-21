@@ -5,7 +5,7 @@
 # 21 Aug 2022
 # Modifications: Changed from -eg -le modules to using variables
 # Added break to ensure that 42 stops the game
-#
+# Replacead word "Correct" with new word "Right"
       
 printError() 
       
@@ -48,7 +48,7 @@ getNumber()
             echo "Too High!"
         else
               correctnumber=”$REPLY”
-              echo “Correct!”
+              echo “Right!”
               break
         fi
     done
