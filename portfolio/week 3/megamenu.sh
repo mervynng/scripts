@@ -8,21 +8,24 @@
 # Date: 21 Aug - Incorporate Menu into new MegaMenu
 # 
 
+echo -e "\033[31;1;4mEnter a Password \e[0m"
+
 ./passwordCheck.sh
 
 if [[ "$?" == "0" ]]; then
-    
+
 echo Select an Option:
-echo 1. Create a folder
+echo -e "\033[35;1;4m1. Create a folder"
 echo 2. Copy a folder
 echo 3. Set a password
 echo 4. Calculator
 echo 5. Create Week Folders
 echo 6. Check Filenames
-echo 7. Download a File
+echo "7. Download a File \e[0m"
 
+echo -e "\033[34;1;4mPlease enter an option > \e[0m"
 
-read -p "Please enter an option > " userOption
+read -p "" userOption
 
 # Var Check and informs user of their option
 echo You have entered "$userOption"

@@ -4,6 +4,7 @@
 # 06 Feb 2022
 # 20 Aug 2022 - Migrated and commented with improvements to functionality
 # 20 Aug 2022 - Completed Debug and implemented clean-up code
+# 21 Aug 2022 - Added Green Colour to Access Granted
 
 #Request User Input
 echo "Type the Password (Hidden) "
@@ -23,7 +24,7 @@ currentPassword=$(cat ./secret.txt)
 #Compares the both hashes to determine if the newly read password, matches the current setpassword
 
 if [[ "$passHashVar" == "$currentPassword" ]]; then
-        echo "Access Granted"
+        echo -e "\033[32;1;4mAccess Granted \e[0m"
         echo " "
         
         # Deletes the passHash in clean-up
