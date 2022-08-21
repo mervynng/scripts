@@ -3,43 +3,27 @@
 # Author: Mervyn Ng
 # Date: 21 Aug 2022
 # Corrected variables for readability
-
-# Declare variables
-
-running=y
-
+# Modified to incorporate cleaner breakpoints
 
 # Prompt for User Input for a Webpage
+# Choice to exit and break early with only one loop iteration
 
-read -p "Type the name of the website or file you would like to download " url
-read -p "Enter the Log filename to save the download into " downFile
-read -p "Enter the folder to save the download into " downFolder
+while :;
+do
 
-# Use wget to retrive the URL
-# Output wget information to a TXT File
+read -p "Type the file name of the  download URL or type \"exit\" to quit: " url
 
-while [ $running != exit  ]; 
-    do
-        echo wget $url -o '/'$downFolder/$downFile
+if [ "$url" == "exit" ];then
+break;
+fi
 
-        mkdir $downFolder
-        cd $downFolder
-        wget $url -o $downFile
-        cd ..
+read -p "Input the download directory to save the file to: " directory
 
-        read -p "Do you want to Download another Internet resource. Type \"exit\" to close this program " running
+filename=$(eval echo $directory)
 
-        #Expected break point
-        
-            if [ $running == exit ];
-                then
-                    echo "Goodbye"
-                    break
-            fi
+echo $filename
 
-        read -p "Type the name of the website or file you would like to download " url
-        read -p "Enter the Log filename to save the download into " downFile
-        read -p "Enter the folder to save the download into " downFolder
+wget -P $filename $url
 
 done
 
@@ -47,4 +31,5 @@ exit 0
 
 # References
 # GeeksforGeeks.com (2022) Bash Scripting – While Loop. https://www.geeksforgeeks.org/bash-scripting-while-loop/
-# R. MCKNIGHT (2022)An internet downloader using loops. https://courses.ecu.edu.au/courses/13892/pages/3-dot-5-an-internet-downloader-using-loops?module_item_id=955314
+# R. MCKNIGHT (2022) An internet downloader using loops. https://courses.ecu.edu.au/courses/13892/pages/3-dot-5-an-internet-downloader-using-loops?module_item_id=955314
+# S. DHIR (2022) Email explaining wGET while LOOP Error.
