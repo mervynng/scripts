@@ -3,8 +3,10 @@
 # Mandatory input is another arguement
 # Author: Mervyn Ng
 # Date: 21 Aug 2022
+# V1.1 : Fixed variable to ensure correct script works
 
 # Checks initial script for minimum arguement and exits with warning
+
 
 if (( $#!=1 )); then 
       
@@ -16,7 +18,7 @@ fi
 
 
     for str in $(cat ${1}); do
-       if [ -f "str" ]; then
+       if [ -f "$str" ]; then
             echo "$str is a file"
         elif [ -d "$str" ]; then
             echo "$str is a directory"
