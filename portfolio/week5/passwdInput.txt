@@ -1,0 +1,50 @@
+______________________________________________________________________________________________________________________
+| [34mUsername[0m         | [34mUserID[0m         | [34mGroupID[0m        | [34mHome[0m                             | [34mShell[0m                       |
+| [33mroot            [0m | [35m0             [0m | [35m0             [0m | [35m/root                           [0m | [35m/bin/bash                  [0m |
+| [33mdaemon          [0m | [35m1             [0m | [35m1             [0m | [35m/usr/sbin                       [0m | [35m/usr/sbin/nologin          [0m |
+| [33mbin             [0m | [35m2             [0m | [35m2             [0m | [35m/bin                            [0m | [35m/usr/sbin/nologin          [0m |
+| [33msys             [0m | [35m3             [0m | [35m3             [0m | [35m/dev                            [0m | [35m/usr/sbin/nologin          [0m |
+| [33msync            [0m | [35m4             [0m | [35m65534         [0m | [35m/bin                            [0m | [35m/bin/sync                  [0m |
+| [33mgames           [0m | [35m5             [0m | [35m60            [0m | [35m/usr/games                      [0m | [35m/usr/sbin/nologin          [0m |
+| [33mman             [0m | [35m6             [0m | [35m12            [0m | [35m/var/cache/man                  [0m | [35m/usr/sbin/nologin          [0m |
+| [33mlp              [0m | [35m7             [0m | [35m7             [0m | [35m/var/spool/lpd                  [0m | [35m/usr/sbin/nologin          [0m |
+| [33mmail            [0m | [35m8             [0m | [35m8             [0m | [35m/var/mail                       [0m | [35m/usr/sbin/nologin          [0m |
+| [33mnews            [0m | [35m9             [0m | [35m9             [0m | [35m/var/spool/news                 [0m | [35m/usr/sbin/nologin          [0m |
+| [33muucp            [0m | [35m10            [0m | [35m10            [0m | [35m/var/spool/uucp                 [0m | [35m/usr/sbin/nologin          [0m |
+| [33mproxy           [0m | [35m13            [0m | [35m13            [0m | [35m/bin                            [0m | [35m/usr/sbin/nologin          [0m |
+| [33mwww-data        [0m | [35m33            [0m | [35m33            [0m | [35m/var/www                        [0m | [35m/usr/sbin/nologin          [0m |
+| [33mbackup          [0m | [35m34            [0m | [35m34            [0m | [35m/var/backups                    [0m | [35m/usr/sbin/nologin          [0m |
+| [33mlist            [0m | [35m38            [0m | [35m38            [0m | [35m/var/list                       [0m | [35m/usr/sbin/nologin          [0m |
+| [33mirc             [0m | [35m39            [0m | [35m39            [0m | [35m/var/run/ircd                   [0m | [35m/usr/sbin/nologin          [0m |
+| [33mgnats           [0m | [35m41            [0m | [35m41            [0m | [35m/var/lib/gnats                  [0m | [35m/usr/sbin/nologin          [0m |
+| [33mnobody          [0m | [35m65534         [0m | [35m65534         [0m | [35m/nonexistent                    [0m | [35m/usr/sbin/nologin          [0m |
+| [33msystemd-timesync[0m | [35m100           [0m | [35m102           [0m | [35m/run/systemd                    [0m | [35m/usr/sbin/nologin          [0m |
+| [33msystemd-network [0m | [35m101           [0m | [35m103           [0m | [35m/run/systemd                    [0m | [35m/usr/sbin/nologin          [0m |
+| [33msystemd-resolve [0m | [35m102           [0m | [35m104           [0m | [35m/run/systemd                    [0m | [35m/usr/sbin/nologin          [0m |
+| [33mmessagebus      [0m | [35m103           [0m | [35m106           [0m | [35m/nonexistent                    [0m | [35m/usr/sbin/nologin          [0m |
+| [33msyslog          [0m | [35m104           [0m | [35m109           [0m | [35m/home/syslog                    [0m | [35m/usr/sbin/nologin          [0m |
+| [33m_apt            [0m | [35m105           [0m | [35m65534         [0m | [35m/nonexistent                    [0m | [35m/usr/sbin/nologin          [0m |
+| [33muuidd           [0m | [35m106           [0m | [35m110           [0m | [35m/run/uuidd                      [0m | [35m/usr/sbin/nologin          [0m |
+| [33msshd            [0m | [35m107           [0m | [35m65534         [0m | [35m/run/sshd                       [0m | [35m/usr/sbin/nologin          [0m |
+| [33mlandscape       [0m | [35m108           [0m | [35m114           [0m | [35m/var/lib/landscape              [0m | [35m/usr/sbin/nologin          [0m |
+| [33mpollinate       [0m | [35m109           [0m | [35m1             [0m | [35m/var/cache/pollinate            [0m | [35m/bin/false                 [0m |
+| [33msystemd-coredump[0m | [35m999           [0m | [35m999           [0m | [35m/                               [0m | [35m/sbin/nologin              [0m |
+| [33mlxd             [0m | [35m998           [0m | [35m100           [0m | [35m/var/snap/lxd/common/lxd        [0m | [35m/bin/false                 [0m |
+| [33mdnsmasq         [0m | [35m110           [0m | [35m65534         [0m | [35m/var/lib/misc                   [0m | [35m/usr/sbin/nologin          [0m |
+| [33mrtkit           [0m | [35m111           [0m | [35m118           [0m | [35m/proc                           [0m | [35m/usr/sbin/nologin          [0m |
+| [33musbmux          [0m | [35m112           [0m | [35m46            [0m | [35m/var/lib/usbmux                 [0m | [35m/usr/sbin/nologin          [0m |
+| [33mavahi           [0m | [35m113           [0m | [35m119           [0m | [35m/var/run/avahi-daemon           [0m | [35m/usr/sbin/nologin          [0m |
+| [33mcups-pk-helper  [0m | [35m114           [0m | [35m120           [0m | [35m/home/cups-pk-helper            [0m | [35m/usr/sbin/nologin          [0m |
+| [33msaned           [0m | [35m115           [0m | [35m122           [0m | [35m/var/lib/saned                  [0m | [35m/usr/sbin/nologin          [0m |
+| [33mcolord          [0m | [35m116           [0m | [35m123           [0m | [35m/var/lib/colord                 [0m | [35m/usr/sbin/nologin          [0m |
+| [33mgeoclue         [0m | [35m117           [0m | [35m124           [0m | [35m/var/lib/geoclue                [0m | [35m/usr/sbin/nologin          [0m |
+| [33mpulse           [0m | [35m118           [0m | [35m125           [0m | [35m/var/run/pulse                  [0m | [35m/usr/sbin/nologin          [0m |
+| [33mgdm             [0m | [35m119           [0m | [35m127           [0m | [35m/var/lib/gdm3                   [0m | [35m/bin/false                 [0m |
+| [33mxrdp            [0m | [35m120           [0m | [35m129           [0m | [35m/var/run/xrdp                   [0m | [35m/usr/sbin/nologin          [0m |
+| [33mtcpdump         [0m | [35m121           [0m | [35m131           [0m | [35m/nonexistent                    [0m | [35m/usr/sbin/nologin          [0m |
+| [33mstudent         [0m | [35m1000          [0m | [35m1001          [0m | [35m/home/student                   [0m | [35m/bin/bash                  [0m |
+| [33momi             [0m | [35m997           [0m | [35m997           [0m | [35m/home/omi                       [0m | [35m/bin/false                 [0m |
+| [33momsagent        [0m | [35m996           [0m | [35m998           [0m | [35m/var/opt/microsoft/omsagent/run [0m | [35m/bin/bash                  [0m |
+| [33mnxautomation    [0m | [35m995           [0m | [35m995           [0m | [35m/home/nxautomation/run          [0m | [35m/bin/bash                  [0m |
+| [33mtss             [0m | [35m122           [0m | [35m133           [0m | [35m/var/lib/tpm                    [0m | [35m/bin/false                 [0m |
+______________________________________________________________________________________________________________________
