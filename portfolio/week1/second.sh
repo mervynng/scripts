@@ -9,6 +9,10 @@
 
 echo "Hi there!"
 
+# Prints "It's good to see you adn the name entered"
 echo "It's good to see you $1!"
 
 exit 0
+
+# References
+# R. MCKNIGHT (2022). Write and execute simple shell scripts. https://courses.ecu.edu.au/courses/13892/pages/1-dot-4-write-and-execute-simple-shell-scripts?module_item_id=955297
